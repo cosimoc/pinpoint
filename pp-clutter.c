@@ -651,7 +651,6 @@ clutter_renderer_init_speaker_screen (ClutterRenderer *renderer)
 
   renderer->speaker_window = g_object_new (GTK_TYPE_WINDOW,
                                            "type", GTK_WINDOW_TOPLEVEL,
-                                           "hide-titlebar-when-maximized", TRUE,
                                            "resizable", TRUE,
                                            "title", "Pinpoint speaker screen",
                                            "default-width", DEFAULT_WIDTH,
@@ -889,7 +888,6 @@ clutter_renderer_init (PinPointRenderer   *pp_renderer,
 
   renderer->window = g_object_new (GTK_TYPE_WINDOW,
                                    "type", GTK_WINDOW_TOPLEVEL,
-                                   "hide-titlebar-when-maximized", TRUE,
                                    "resizable", TRUE,
                                    "title", "Pinpoint presentation",
                                    "default-width", DEFAULT_WIDTH,
