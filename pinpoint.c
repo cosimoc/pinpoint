@@ -239,8 +239,6 @@ main (int    argc,
     {
 #ifdef HAVE_PDF
       renderer = pp_cairo_renderer ();
-      /* makes more sense to default to a white "stage" colour in PDFs*/
-      default_point.stage_color = "white";
 #else
       g_warning ("Pinpoint was built without PDF support");
       return EXIT_FAILURE;
